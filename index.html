@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="task-container">
+            <h1 id="title">Tasks</h1>
+            <hr>
+            <div class="tasks">
+                <div class="task">
+                    <input type="checkbox" name="task" id="task1"><label for="task1"> This is a task</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="task" id="task2"><label for="task2"> This is a task</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="task" id="task3"><label for="task3"> This is a task</label>
+                </div>
+                
+                
+            </div>
+            <hr>
+            <div class="add-task-container">
+                <button id="add-task-btn">Add a Task</button>
+            </div>
+        </div>
+
+        <div id="add-task-modal" class="modal">
+            <div class="add-task-content">
+                <span class="close">&times;</span>
+                <h2>Add a Task</h2>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
